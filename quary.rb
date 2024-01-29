@@ -1,5 +1,5 @@
 class Quary < Formula
-  desc "Collaborative Business Intelligence. Your team's browser-based data workbench."
+  desc "Collaborative Business Intelligence, your team's browser-based data workbench"
   homepage "https://www.quary.dev"
 
   if Hardware::CPU.intel?
