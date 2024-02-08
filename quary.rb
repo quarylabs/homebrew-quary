@@ -13,6 +13,6 @@ class Quary < Formula
     sha256 "ee3a3a35a002a634d5745d09f7db9781465ece1692b6265a35390d220c18d8ef"
   end
   def install
-    bin.install "quary-0.0.84" => "quary"
+    bin.install "quary" => "quary"
   end
 end
