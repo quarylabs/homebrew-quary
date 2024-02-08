@@ -6,13 +6,13 @@ class Quary < Formula
   desc "Collaborative Business Intelligence, your team's browser-based data workbench"
   homepage "https://www.quary.dev"
   if Hardware::CPU.intel?
-    url "https://github.com/quarylabs/quary-cli/releases/download/0.0.79/quary-0.0.79-quary-macos-x86_64-gnu.zip"
-    sha256 "94e03fc1f8b657a907c21be098e7905b69ee4899cc278b200155b9346a319e1b"
+    url "https://github.com/quarylabs/quary-cli/releases/download/0.0.84/quary-0.0.84-quary-macos-x86_64-gnu.zip"
+    sha256 "167663f2e54889753d6e99190fd5a27ed91a799d35a22df9d93d9a115bfa67f6"
   elsif Hardware::CPU.arm?
-    url "https://github.com/quarylabs/quary-cli/releases/download/0.0.79/quary-0.0.79-quary-macos-aarch64-gnu.zip"
-    sha256 "0676781282a14310af743aac2c40ea162894d0d35d42cb080fd959b90d914c3f"
+    url "https://github.com/quarylabs/quary-cli/releases/download/0.0.84/quary-0.0.84-quary-macos-aarch64-gnu.zip"
+    sha256 "ee3a3a35a002a634d5745d09f7db9781465ece1692b6265a35390d220c18d8ef"
   end
   def install
-    bin.install "quary-0.0.79" => "quary"
+    bin.install "quary-0.0.84" => "quary"
   end
 end
