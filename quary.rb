@@ -7,11 +7,11 @@ class Quary < Formula
   homepage "https://www.quary.dev"
   depends_on :macos
   if Hardware::CPU.intel?
-    url "https://github.com/quarylabs/quary-cli/releases/download/0.0.93/quary-0.0.93-quary-macos-x86_64-gnu.zip"
-    sha256 "0cc53cc3fc899c439afe68bf5776e7bbc71f45a56aaca4f8eaa4aef141d86166"
+    url "https://github.com/quarylabs/quary/releases/download/0.0.95/quary-0.0.95-quary-macos-x86_64-gnu.zip"
+    sha256 "840273b2f8e5747e6032fa794462739775631cf96920d21ea532086f971863e6"
   elsif Hardware::CPU.arm?
-    url "https://github.com/quarylabs/quary-cli/releases/download/0.0.93/quary-0.0.93-quary-macos-aarch64-gnu.zip"
-    sha256 "eba10c57eccf74cf14955dc0189792a6a7043ae04d284463093d03b05c0c5e02"
+    url "https://github.com/quarylabs/quary/releases/download/0.0.95/quary-0.0.95-quary-macos-aarch64-gnu.zip"
+    sha256 "7e174ad80c4ac61ac045d88d42d6e65dceb136238075e23177a267be99e5a6bc"
   end
   def install
     bin.install "quary" => "quary"
