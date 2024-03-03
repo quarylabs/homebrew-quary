@@ -5,6 +5,7 @@
 class Quary < Formula
   desc "Collaborative Business Intelligence, your team's browser-based data workbench"
   homepage "https://www.quary.dev"
+  version "0.0.96"
 
   # Determine the OS and architecture to set the appropriate URL and SHA-256
   if OS.mac? && Hardware::CPU.intel?
