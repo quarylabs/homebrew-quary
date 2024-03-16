@@ -9,14 +9,14 @@ class Sqruff < Formula
 
   # Determine the OS and architecture to set the appropriate URL and SHA-256
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/quarylabs/sqruff/releases/download/v0.0.6/sqruff-darwin-aarch64.tar.gz"
-    sha256 "c272692e37bdea5ec1c0f279acfa11f48820f71c54b71f4bffde848c075c6155"
+    url "https://github.com/quarylabs/sqruff/releases/download/v0.0.8/sqruff-darwin-aarch64.tar.gz"
+    sha256 "390483a36b29e791d9431885cd840675d3f5627a7f1a3f68c1cd4c498557f91b"
   elsif OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/quarylabs/sqruff/releases/download/v0.0.6/sqruff-darwin-x86_64.tar.gz"
-    sha256 "7657ad498094a5dd944e3ab6746b9ebe6239c3fdf6466067c21684d409d2b49c"
+    url "https://github.com/quarylabs/sqruff/releases/download/v0.0.8/sqruff-darwin-x86_64.tar.gz"
+    sha256 "ac64dc1b8e410b02afe5d186e5b6e52eace00e8f7abf2e43abe0fe7e21f51fc4"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/quarylabs/sqruff/releases/download/v0.0.6/sqruff-linux-x86_64-musl.tar.gz"
-    sha256 "cd819ab9e2ce7ca9d14a93574daa02dca53ac251ac6897223d6915ceededa8f0"
+    url "https://github.com/quarylabs/sqruff/releases/download/v0.0.8/sqruff-linux-x86_64-musl.tar.gz"
+    sha256 "b0b9d4bb154373fb2e62a71e30fe79ada7a7af66d3686fe67a7c518eede1c8f8"
   end
 
   def install
