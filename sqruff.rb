@@ -5,7 +5,7 @@
 class Sqruff < Formula
   desc "High-speed SQL linter, written in Rust"
   homepage "https://github.com/quarylabs/sqruff"
-  version "0.0.6"
+  version "0.0.8"
 
   # Determine the OS and architecture to set the appropriate URL and SHA-256
   if OS.mac? && Hardware::CPU.arm?
