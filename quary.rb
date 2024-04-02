@@ -8,14 +8,14 @@ class Quary < Formula
 
   # Determine the OS and architecture to set the appropriate URL and SHA-256
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/quarylabs/quary/releases/download/0.0.103/quary-0.0.103-quary-macos-x86_64-gnu.zip"
-    sha256 "5bbe0eed02bc645afd9d1bbc99c2e85e21b231a3f47c68c5138b94a7ef351515"
+    url "https://github.com/quarylabs/quary/releases/download/0.0.104/quary-0.0.104-quary-macos-x86_64-gnu.zip"
+    sha256 "b03570c29f3f57ad2bb1339adad866146c5431e0e052add4b29a7b04cb2b656c"
   elsif OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/quarylabs/quary/releases/download/0.0.103/quary-0.0.103-quary-macos-aarch64-gnu.zip"
-    sha256 "0854d76dee2789999df2caf14c1574a2c27ab877579884e1c49b7f7497193e3f"
+    url "https://github.com/quarylabs/quary/releases/download/0.0.104/quary-0.0.104-quary-macos-aarch64-gnu.zip"
+    sha256 "a07173039b66bb1e6c7eff30cbdf1d34302416aa152f5f8a032a7070ca00e931"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/quarylabs/quary/releases/download/0.0.103/quary-0.0.103-quary-linux-x86_64-gnu.zip"
-    sha256 "1890154e4c8c0005c07ea602b80c18e6d1efacc058b51b57e894de7099b1a525"
+    url "https://github.com/quarylabs/quary/releases/download/0.0.104/quary-0.0.104-quary-linux-x86_64-gnu.zip"
+    sha256 "135d0ee0e7de5e0f8861508e358be3cb910acd4717685ab505bf7a82b9b27386"
   end
 
   def install
