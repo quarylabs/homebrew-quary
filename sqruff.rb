@@ -5,18 +5,18 @@
 class Sqruff < Formula
   desc "High-speed SQL linter, written in Rust"
   homepage "https://github.com/quarylabs/sqruff"
-  version "0.25.12"
+  version "0.25.16"
 
   # Determine the OS and architecture to set the appropriate URL and SHA-256
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/quarylabs/sqruff/releases/download/v0.25.12/sqruff-darwin-aarch64.tar.gz"
-    sha256 "0d9655d202ee4c3c5c1e25449b60c8445fccccdbe1bbac43592361b8da77e419"
+    url "https://github.com/quarylabs/sqruff/releases/download/v0.25.16/sqruff-darwin-aarch64.tar.gz"
+    sha256 "9d14c9eb55b760c814e14b49d5a502da63084e295931693cb559fccfc93e1b93"
   elsif OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/quarylabs/sqruff/releases/download/v0.25.12/sqruff-darwin-x86_64.tar.gz"
-    sha256 "c8fd62e7b15ca086be155037585b8a092df16e628d7fced57c21db145ea49082"
+    url "https://github.com/quarylabs/sqruff/releases/download/v0.25.16/sqruff-darwin-x86_64.tar.gz"
+    sha256 "0773f5ed85dbfec825998218242bd76e05d8ca6efc2d835cd50330fb7291a625"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/quarylabs/sqruff/releases/download/v0.25.12/sqruff-linux-x86_64-musl.tar.gz"
-    sha256 "7e79f4a4254e8e79d4c5d981ba52ca4cd39214f9aed83a0136f110033c9f7fe5"
+    url "https://github.com/quarylabs/sqruff/releases/download/v0.25.16/sqruff-linux-x86_64-musl.tar.gz"
+    sha256 "20ce6ce921d5847afec4f4358aae9837716665cf42265e9437fe2f1fe6efd926"
   end
 
   def install
